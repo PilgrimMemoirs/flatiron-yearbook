@@ -4,4 +4,7 @@ class Course < ActiveRecord::Base
 
   has_many :users_courses
   has_many :users, through: :users_courses
+
+  validates :code, presence: true, uniqueness: true
+  validates :passcode, presence: true
 end
