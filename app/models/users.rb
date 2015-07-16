@@ -1,3 +1,3 @@
-class User < ActiveRecord::Base
+class Users < ActiveRecord::Base
   # Remember to create a migration!
 end
